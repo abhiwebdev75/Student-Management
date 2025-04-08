@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 50%;
+            margin: auto;
+            padding: 30px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 30px;
+        }
+
+        label {
+            font-weight: bold;
+            margin-top: 10px;
+            display: block;
+        }
+
+        input,
+        select {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .btn {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #5bc0de;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: #31b0d5;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Register New User</h1>
+        <form action="RegisterServlet" method="POST">
+            <!-- User Details Form -->
+            <label for="userId">User ID</label>
+            <input type="text" id="userId" name="userId" required />
+
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required />
+
+            <label for="fatherName">Father's Name</label>
+            <input type="text" id="fatherName" name="fatherName" required />
+
+            <label for="motherName">Mother's Name</label>
+            <input type="text" id="motherName" name="motherName" required />
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required />
+
+            <label for="phone">Phone</label>
+            <input type="text" id="phone" name="phone" required />
+
+            <label for="grade">Grade</label>
+            <input type="text" id="grade" name="grade" required />
+
+            <label for="city">City</label>
+            <input type="text" id="city" name="city" required />
+
+            <label for="state">State</label>
+            <select id="state" name="state" required>
+                <option value="" disabled selected>Select State</option>
+                <option value="Andhra Pradesh">Andhra Pradesh</option>
+                <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                <option value="Assam">Assam</option>
+                <option value="Bihar">Bihar</option>
+                <option value="Chhattisgarh">Chhattisgarh</option>
+                <option value="Goa">Goa</option>
+                <option value="Gujarat">Gujarat</option>
+                <option value="Haryana">Haryana</option>
+                <option value="Himachal Pradesh">Himachal Pradesh</option>
+                <option value="Jharkhand">Jharkhand</option>
+                <option value="Karnataka">Karnataka</option>
+                <option value="Kerala">Kerala</option>
+                <option value="Madhya Pradesh">Madhya Pradesh</option>
+                <option value="Maharashtra">Maharashtra</option>
+                <option value="Manipur">Manipur</option>
+                <option value="Meghalaya">Meghalaya</option>
+                <option value="Mizoram">Mizoram</option>
+                <option value="Nagaland">Nagaland</option>
+                <option value="Odisha">Odisha</option>
+                <option value="Punjab">Punjab</option>
+                <option value="Rajasthan">Rajasthan</option>
+                <option value="Sikkim">Sikkim</option>
+                <option value="Tamil Nadu">Tamil Nadu</option>
+                <option value="Telangana">Telangana</option>
+                <option value="Tripura">Tripura</option>
+                <option value="Uttar Pradesh">Uttar Pradesh</option>
+                <option value="Uttarakhand">Uttarakhand</option>
+                <option value="West Bengal">West Bengal</option>
+                <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
+                <option value="Chandigarh">Chandigarh</option>
+                <option value="Dadra and Nagar Haveli and Daman and Diu">Dadra and Nagar Haveli and Daman and Diu</option>
+                <option value="Lakshadweep">Lakshadweep</option>
+                <option value="Delhi">Delhi</option>
+                <option value="Puducherry">Puducherry</option>
+                <option value="Ladakh">Ladakh</option>
+                <option value="Jammu and Kashmir">Jammu and Kashmir</option>
+            </select>
+
+            <label for="religion">Religion</label>
+            <select id="religion" name="religion" required>
+                <option value="" disabled selected>Select Religion</option>
+                <option value="Hindu">Hindu</option>
+                <option value="Muslim">Muslim</option>
+                <option value="Christian">Christian</option>
+                <option value="Sikh">Sikh</option>
+                <option value="Buddhist">Buddhist</option>
+                <option value="Jain">Jain</option>
+                <option value="Other">Other</option>
+            </select>
+
+            <label for="gender">Gender</label>
+            <input type="radio" id="male" name="gender" value="Male" required /> Male
+            <input type="radio" id="female" name="gender" value="Female" required /> Female
+            <input type="radio" id="other" name="gender" value="Other" required /> Other
+
+            <label for="imglink">Profile Image Path</label>
+            <input type="text" id="imglink" name="imglink" required />
+
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required />
+
+            <button type="submit" class="btn">Register</button>
+        </form>
+        <div class='footer'>
+        <p>Already have an account? <a href='index.html'>Login here</a></p>
+        </div>
+    </div>
+
+</body>
+
+</html>

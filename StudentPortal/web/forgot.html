@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forgot Password</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+        }
+
+        .forgot-container {
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            text-align: center;
+        }
+
+        h2 {
+            margin-bottom: 20px;
+        }
+
+        .input-field {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        .submit-btn {
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .submit-btn:hover {
+            background-color: #45a049;
+        }
+
+        .footer {
+            margin-top: 20px;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+    <div class="forgot-container">
+        <h2>Forgot Password</h2>
+        <form action="forgotpassword" method="POST">
+            <div>
+                <input type="text" name="name" class="input-field" placeholder="Full Name" required>
+            </div>
+            <div>
+                <input type="email" name="email" class="input-field" placeholder="Email" required>
+            </div>
+            <div>
+                <input type="text" name="phone" class="input-field" placeholder="Phone Number" required>
+            </div>
+            <div>
+                <button type="submit" class="submit-btn">Reset Password</button>
+            </div>
+        </form>
+        <div class="footer">
+            <p>&copy; 2025 Forgot Password Page</p>
+        </div>
+    </div>
+</body>
+</html>
