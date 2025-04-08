@@ -38,6 +38,7 @@ Follow these steps to get the application running on your local machine:
 ```bash
 git clone https://github.com/your-username/aip-webapp.git
 cd aip-webapp
+```
 
 ###🧑‍💻 2. Import the Project into Your IDE
 Open Eclipse / IntelliJ IDEA / NetBeans.
