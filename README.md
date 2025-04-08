@@ -100,9 +100,9 @@ Welcome to your AIP project dashboard! 🎉
 Add screenshots here if you’ve got a cool login page or dashboard!
 
 ### 🙋‍♂️ Author
-# 👨‍💻 Abhinash
-# 📧 abhit7575@gmail.com
-#### 🎓 Project submitted for Advanced Internet Programming course.
+#### 👨‍💻 Abhinash
+#### 📧 abhit7575@gmail.com
+## 🎓 Project submitted for Advanced Internet Programming course.
 
 
 
