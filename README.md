@@ -53,8 +53,6 @@ Launch phpMyAdmin (usually at http://localhost/phpmyadmin).
 Create a new database named:
 
 ```nginx
-Copy
-Edit
 aip_project_db
 ```
 Import the SQL file:
@@ -65,34 +63,29 @@ Select the provided aip_project_db.sql file from the database/ folder.
 
 Click Go.
 
-🔌 4. Configure Database Connection in Code
+### 🔌 4. Configure Database Connection in Code
 Open the DBConnection.java file (typically in a utils or dao package), and update:
 
 ```java
-Copy
-Edit
 String url = "jdbc:mysql://localhost:3306/aip_project_db";
 String username = "root";
 String password = ""; // your MySQL/phpMyAdmin password here
 ```
-🚀 5. Deploy the Web App on Tomcat
+### 🚀 5. Deploy the Web App on Tomcat
 Right-click the project → Run on Server → Choose Tomcat.
 
 Or manually deploy the .war file to webapps/ in Tomcat.
 
 Then visit in browser:
 
-bash
-Copy
-Edit
+```bash
 http://localhost:8080/aip-webapp/
+```
 Welcome to your AIP project dashboard! 🎉
 
-🗂️ Project Folder Structure
-bash
-Copy
-Edit
-📦 aip-webapp/
+### 🗂️ Project Folder Structure
+
+## 📦 aip-webapp/
 ├── src/
 │   ├── beans/           # JavaBeans (POJOs)
 │   ├── servlets/        # Controller Servlets
@@ -103,13 +96,13 @@ Edit
 │       └── web.xml      # Deployment descriptor
 ├── database/
 │   └── aip_project_db.sql  # MySQL script
-📸 Preview (Optional)
+#### 📸 Preview (Optional)
 Add screenshots here if you’ve got a cool login page or dashboard!
 
-🙋‍♂️ Author
-👨‍💻 Abhinash
-📧 youremail@example.com
-🎓 Project submitted for Advanced Internet Programming course.
+### 🙋‍♂️ Author
+## 👨‍💻 Abhinash
+## 📧 abhit7575@gmail.com
+#### 🎓 Project submitted for Advanced Internet Programming course.
 
 
 
