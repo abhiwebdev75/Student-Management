@@ -40,22 +40,23 @@ git clone https://github.com/your-username/aip-webapp.git
 cd aip-webapp
 ```
 
-###🧑‍💻 2. Import the Project into Your IDE
+### 🧑‍💻 2. Import the Project into Your IDE
 Open Eclipse / IntelliJ IDEA / NetBeans.
 
 Select Import > Existing Project > Java Web.
 
 Ensure Apache Tomcat is properly configured in your IDE.
 
-🏗️ 3. Setup the MySQL Database
+### 🏗️ 3. Setup the MySQL Database
 Launch phpMyAdmin (usually at http://localhost/phpmyadmin).
 
 Create a new database named:
 
-nginx
+```nginx
 Copy
 Edit
 aip_project_db
+```
 Import the SQL file:
 
 Navigate to the "Import" tab in phpMyAdmin.
@@ -67,12 +68,13 @@ Click Go.
 🔌 4. Configure Database Connection in Code
 Open the DBConnection.java file (typically in a utils or dao package), and update:
 
-java
+```java
 Copy
 Edit
 String url = "jdbc:mysql://localhost:3306/aip_project_db";
 String username = "root";
 String password = ""; // your MySQL/phpMyAdmin password here
+```
 🚀 5. Deploy the Web App on Tomcat
 Right-click the project → Run on Server → Choose Tomcat.
 
