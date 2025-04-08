@@ -86,16 +86,7 @@ Welcome to your AIP project dashboard! 🎉
 ### 🗂️ Project Folder Structure
 
 ## 📦 aip-webapp/
-├── src/
-│   ├── beans/           # JavaBeans (POJOs)
-│   ├── servlets/        # Controller Servlets
-│   └── db/              # Database connection utils
-├── web/
-│   ├── jsp/             # JSP views
-│   └── WEB-INF/
-│       └── web.xml      # Deployment descriptor
-├── database/
-│   └── aip_project_db.sql  # MySQL script
+📦 StudentManagementSystem/ ├── 🛠️ build/ # Compiled files ├── 📦 dist/ │ └── 📦 StudentPortal.war # WAR file for deployment ├── ⚙️ nbproject/ # NetBeans project settings ├── 📁 src/ │ ├── 🧾 conf/ │ │ └── 📄 MANIFEST.MF # Manifest file for JAR packaging │ └── 🧠 java/ │ ├── 🧩 AddUserServlet.java │ ├── 🔌 DBConnection.java │ ├── 📊 DashboardServlet.java │ ├── ✏️ EditUserServlet.java │ ├── 📝 RegisterServlet.java │ ├── 🔐 ResetPasswordServlet.java │ ├── 📄 Student_Test_Grades.java │ ├── ❓ forgot.java │ ├── 🔑 login.java │ ├── 🚪 logout.java │ └── 👤 userProfile.java │ │ └── 📂 main/ │ └── 📁 java/ # (Optional additional logic) │ ├── 🧪 test/ # Test cases (currently empty) │ ├── 🌐 web/ │ ├── 📁 META-INF/ │ ├── 📁 WEB-INF/ │ │ └── 📄 web.xml # Deployment descriptor │ ├── 📄 Student_Test_Grades.html │ ├── 📄 forgot.html │ ├── 🏠 index.html │ ├── 📝 registration.html │ └── 🔁 reset_password.html │ └── 🧱 build.xml # Apache Ant build script
 #### 📸 Preview (Optional)
 Add screenshots here if you’ve got a cool login page or dashboard!
 
