@@ -121,8 +121,6 @@ Welcome to your AIP project dashboard! 🎉
 │   └── 🔁 reset_password.html
 └── 🧱 build.xml                         # Ant build script
 ```
-#### 📸 Preview (Optional)
-Add screenshots here if you’ve got a cool login page or dashboard!
 
 ### 🙋‍♂️ Author
 #### 👨‍💻 Abhinash
